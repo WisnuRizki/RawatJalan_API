@@ -1,0 +1,25 @@
+{
+  "name": "rawat_jalan_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:create:migrate": "sequelize migration:generate --name",
+    "db:migrate": "sequelize db:migrate",
+    "db:rollback": "sequelize db:migrate:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pdf-creator-node": "^2.3.4",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "randomstring": "^1.2.2",
+    "sequelize": "^6.21.0"
+  }
+}
